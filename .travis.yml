@@ -2,7 +2,7 @@ language: swift
 osx_image: xcode10.1
 branches:
   only:
-    - chapter8
+    - master
 before_install:
   - gem install fastlane --no-ri --no-rdoc --no-document
 install: true
