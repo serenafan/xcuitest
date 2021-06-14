@@ -11,15 +11,18 @@ import XCTest
 
 class Base: XCTestCase {
     let app = XCUIApplication()
-     func setUpWithError() throws {
+    
+    
+    override func setUp() {
         super.setUp()
         continueAfterFailure = false
         app.launch()
     }
-
-     func tearDownWithError() throws {
+    
+    override func tearDown() {
         super.tearDown()
     }
+    
     
     func XCTAsynAssert(_ element:XCUIElement){
         let iselementExsit = element.waitForExistence(timeout: 10);
