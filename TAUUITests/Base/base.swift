@@ -11,13 +11,13 @@ import XCTest
 
 class Base: XCTestCase {
     let app = XCUIApplication()
-    override func setUpWithError() throws {
+     func setUpWithError() throws {
         super.setUp()
         continueAfterFailure = false
         app.launch()
     }
 
-    override func tearDownWithError() throws {
+     func tearDownWithError() throws {
         super.tearDown()
     }
     
